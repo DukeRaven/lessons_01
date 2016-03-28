@@ -26,10 +26,13 @@ public class SecondPart {
             result *= arr[i];
         return result;
     }
-    private static float division(float[] arr) {
+    private static float division(float[] arr) throws Exception {
         float result = arr[0];
-        for (int i = 1; i < arr.length; i++)
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] == 0)
+                throw new Exception("На 0 делить нельзя!");
             result /= arr[i];
+        }
         return result;
     }
 
@@ -49,9 +52,11 @@ public class SecondPart {
         while (true) {
             System.out.print("Введите операцию(+,-,*,/) и цифры(y-для выхода):");
 
+            //Getting input
             inputString = sc.next();
             inputArray = inputString.split("\\s+");
 
+            //Checking input formats
             if (inputArray[0].equalsIgnoreCase("y")) {
                 System.out.println("Калькулятор OFF");
                 break;
@@ -60,19 +65,27 @@ public class SecondPart {
             if (Arrays.binarySearch(actions, inputArray[0]) < 0) {
                 System.out.println("Вы ввели не действие.");
                 System.out.println("Возможные варианты: " + Arrays.toString(actions));
+                continue;
             }
 
-            numbers = new float[inputArray.length - 1];
+            if (inputArray.length < 3) {
+                System.out.println("Для совершения действия введитие хотябы 2 числа");
+                continue;
+            }
 
             // Checking numbers
+            numbers = new float[inputArray.length - 1];
+
             try {
                 for (int i = 1; i < inputArray.length; i++) {
                     numbers[i -1] = Float.parseFloat(inputArray[i]);
                 }
             } catch (Exception e) {
                 System.out.println("Вы ввели не числа");
+                continue;
             }
 
+            //performing actions
             try {
                 switch (inputArray[0]) {
                     case "+":
@@ -89,7 +102,7 @@ public class SecondPart {
                         break;
                 }
 
-                System.out.printf("Итог: %.0f\n", result);
+                System.out.printf("Итог: %.2f\n", result);
             } catch (Exception e) {
                 System.out.println("Что-то пошло не так во время вычислений.");
                 System.out.println(e.toString());
