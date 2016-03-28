@@ -1,5 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by Kirill on 24.03.2016.
@@ -40,7 +42,6 @@ public class SecondPart {
         Scanner sc = new Scanner(System.in);
         String inputString;
         String[] inputArray;
-        String[] actions = {"+", "-", "/", "*"};
         float[] numbers;
         float result = 0;
 
@@ -62,9 +63,8 @@ public class SecondPart {
                 break;
             }
 
-            if (Arrays.binarySearch(actions, inputArray[0]) < 0) {
-                System.out.println("Вы ввели не действие.");
-                System.out.println("Возможные варианты: " + Arrays.toString(actions));
+            if (!inputArray[0].matches("^[\\+\\-\\*\\/]$")) {
+                System.out.println("Вы не верно ввели действие.");
                 continue;
             }
 
