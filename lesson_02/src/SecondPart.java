@@ -73,22 +73,27 @@ public class SecondPart {
                 System.out.println("Вы ввели не числа");
             }
 
-            switch (inputArray[0]) {
-                case "+":
-                    result = addition(numbers);
-                    break;
-                case "-":
-                    result = subtraction(numbers);
-                    break;
-                case "/":
-                    result = division(numbers);
-                    break;
-                case "*":
-                    result = multiplication(numbers);
-                    break;
-            }
+            try {
+                switch (inputArray[0]) {
+                    case "+":
+                        result = addition(numbers);
+                        break;
+                    case "-":
+                        result = subtraction(numbers);
+                        break;
+                    case "/":
+                        result = division(numbers);
+                        break;
+                    case "*":
+                        result = multiplication(numbers);
+                        break;
+                }
 
-            System.out.printf("Итог: %.0f\n", result);
+                System.out.printf("Итог: %.0f\n", result);
+            } catch (Exception e) {
+                System.out.println("Что-то пошло не так во время вычислений.");
+                System.out.println(e.toString());
+            }
         }
     }
 }

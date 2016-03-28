@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="878ce877-1a68-47e0-b68f-ee1279d4512c" name="Default" comment="">
+    <list default="true" id="878ce877-1a68-47e0-b68f-ee1279d4512c" name="Default" comment="Added exception handling">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SecondPart.java" afterPath="$PROJECT_DIR$/src/SecondPart.java" />
     </list>
@@ -38,8 +38,8 @@
       <file leaf-file-name="SecondPart.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SecondPart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0501618">
-              <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.4449838">
+              <caret line="75" column="17" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -466,7 +466,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459192379738</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implemented&#10;Array input&#10;Methods for Addition, Subtraction, Multiplication, Division&#10;">
+      <created>1459195779122</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1459195779122</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -519,7 +525,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added repo to Idea&#10;Started second part of homework" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added repo to Idea&#10;Started second part of homework" />
+    <MESSAGE value="Implemented&#10;Array input&#10;Methods for Addition, Subtraction, Multiplication, Division&#10;" />
+    <MESSAGE value="Added exception handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added exception handling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -584,8 +592,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SecondPart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0501618">
-          <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.4449838">
+          <caret line="75" column="17" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
