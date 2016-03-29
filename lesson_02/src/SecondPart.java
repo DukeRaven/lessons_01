@@ -10,7 +10,7 @@ public class SecondPart {
 
     private static float addition(float[] arr) {
         float result = 0;
-        for (float i: arr)
+        for (float i : arr)
             result += i;
         return result;
     }
@@ -28,6 +28,7 @@ public class SecondPart {
             result *= arr[i];
         return result;
     }
+
     private static float division(float[] arr) throws Exception {
         float result = arr[0];
         for (int i = 1; i < arr.length; i++) {
@@ -78,7 +79,7 @@ public class SecondPart {
 
             try {
                 for (int i = 1; i < inputArray.length; i++) {
-                    numbers[i -1] = Float.parseFloat(inputArray[i]);
+                    numbers[i - 1] = Float.parseFloat(inputArray[i]);
                 }
             } catch (Exception e) {
                 System.out.println("Вы ввели не числа");
