@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="878ce877-1a68-47e0-b68f-ee1279d4512c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lesson_03/lesson_03.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lesson_03/src/my/homework/Bakery.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lesson_03/src/my/homework/Cake.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lesson_02.iws" />
@@ -553,7 +548,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459275796373</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="homework for lesson 3">
+      <created>1459539921596</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1459539921596</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -611,7 +612,8 @@
     <MESSAGE value="Finished" />
     <MESSAGE value="Refactored and fixed action check" />
     <MESSAGE value="Code refactored" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code refactored" />
+    <MESSAGE value="homework for lesson 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework for lesson 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
